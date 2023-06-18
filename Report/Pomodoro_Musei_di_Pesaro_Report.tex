@@ -1,0 +1,57 @@
+\documentclass[hidelinks,12pt,a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
+% Justifying text
+\emergencystretch 3em
+
+% Remove first empty page
+\usepackage{atbegshi}
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+% License
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+]{doclicense}
+
+\begin{document}
+	\begin{flushleft}
+		
+		\title{\textbf{Pomodoro Musei di Pesaro}\\\small{Presentazione progetto}}
+		\author{Alice Balestieri\\ Rombaldoni Francesco}
+		\date{}
+		
+		\maketitle
+		
+		% Adjust page counter
+		\setcounter{page}{1}
+		\newpage
+		\tableofcontents
+		\newpage
+		
+		\section{Le nostre competenze}
+			\subsection{Chi siamo}
+			\subsection{I nostri studi}
+			\subsection{Le nostre Capacità}
+		
+		\section{Obiettivo del progetto}
+			\subsection{Presentazione obiettivo}
+			\subsection{Strategia per il raggiungimento}
+		
+		\section{Presentazione del progetto}
+			\subsection{Presentazione linguaggio \LaTeX}
+			\subsection{Presentazione piattaforma GitHub per lo sviluppo asincrono}
+			\subsection{Presentazione impostazione dell'ambiente di lavoro}
+			\subsection{Presentazione strategia lavorativa tenuta durante lo sviluppo}
+			\subsection{Presentazione dei documenti del progetto}
+		
+		\section{Note finali}
+		
+	\end{flushleft}
+\end{document}

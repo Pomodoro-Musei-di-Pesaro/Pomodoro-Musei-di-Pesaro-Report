@@ -15,3 +15,6 @@ Report of "Pomodoro Musei di Pesaro" Project
 ---
 
 # To-Do
+- Fare seconda revisione del documento.
+- Aggiungere parti mancanti.
+- Fare revisione finale.

@@ -21,6 +21,5 @@ This work is licensed under a
 ---
 
 # To-Do
-- Aggiungere parti mancanti.
 - Fare revisione finale.
 

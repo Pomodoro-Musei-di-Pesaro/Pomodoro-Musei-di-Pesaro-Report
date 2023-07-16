@@ -3,8 +3,21 @@
 \usepackage[utf8]{inputenc}
 \usepackage{fourier} 
 
+% Images
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{ {../Images} }
+
+% Adjust paragraph.
+\usepackage{changepage}
+
 % Stop hyphenation
 \usepackage[none]{hyphenat}
+
+% Coloring links
+\usepackage{xcolor}
 
 % Justifying text
 \emergencystretch 3em
@@ -20,6 +33,66 @@ modifier={by-nc-sa},
 version={4.0},
 ]{doclicense}
 
+%Command to zoom in --- This isn't the right algorithm to do that.
+\usepackage{mwe}
+\makeatletter
+\newsavebox\zb@x
+\newcounter{z@@m}
+\usepackage{calc}
+\newdimen\B@r\newdimen\P@r
+\newdimen\@zw\newdimen\@zh\newdimen\@zd
+
+\newcommand{\zoombox}[2][0]{%
+	\leavevmode%
+	\sbox\zb@x{#2}%
+	\setlength\B@r{1pt*\ratio{\wd\zb@x}{\ht\zb@x+\dp\zb@x}}%
+	\setlength\P@r{1pt*\ratio{\paperwidth}{\paperheight}}%
+	\ifdim\B@r>\P@r\relax%
+	\setlength\@zw{\wd\zb@x}\setlength\@zh{\@zw*\ratio{\paperheight}{\paperwidth}}%
+	\setlength\@zd{(\@zh-\ht\zb@x-\dp\zb@x)*\real{0.5}+\dp\zb@x}%
+	\setlength\@zh{\@zh-\@zd}%
+	\else%
+	\setlength\@zh{\ht\zb@x+\dp\zb@x}%
+	\setlength\@zw{\@zh*\ratio{\paperwidth}{\paperheight}}%
+	\setlength\@zh{\ht\zb@x}\setlength\@zd{\dp\zb@x}%
+	\fi%
+	\makebox[0pt][l]{\makebox[\wd\zb@x][c]{\makebox[\@zw][l]{%
+				\pdfdest name {zbfs\thez@@m} fitr
+				width  \@zw\space
+				height \@zh\space
+				depth  \@zd\space
+	}}}%
+	\pdfdest name {zb\thez@@m} fitr
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	\immediate\pdfannot 
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	{%
+		/Subtype/Link/H/N
+		/Border [0 0 #1 [1 2]]
+		/A <<
+		/S/JavaScript
+		/JS (
+		if(typeof(zoomed)=='undefined'||!zoomed){
+			var lastView=this.viewState;
+			if(app.fs.isFullScreen) this.gotoNamedDest('zbfs\thez@@m');
+			else this.gotoNamedDest('zb\thez@@m');
+			zoomed=true;
+		}else{
+			this.viewState=lastView;
+			zoomed=false;
+		}
+		)
+		>>
+	}%
+	\usebox{\zb@x}%
+	\stepcounter{z@@m}%
+} 
+\makeatother
+
 \begin{document}
 	\begin{flushleft}
 		
@@ -29,70 +102,91 @@ version={4.0},
 		
 		\maketitle
 		
+		\begin{adjustwidth}{-30mm}{-30mm}
+			\vspace*{\fill}
+			\centering
+			\fboxrule=2pt
+			\fbox
+			{
+				\begin{minipage}{0.85\linewidth}
+					Il seguente documento è ottimizzato per la visualizzazione digitale con \href{https://get.adobe.com/it/reader/}{\textcolor{blue}{Adobe~Acrobat~Reader}}.  
+				\end{minipage}
+			}
+		\end{adjustwidth}
+		
 		% Adjust page counter
 		\setcounter{page}{1}
 		\newpage
 		\tableofcontents
 		\newpage
-			
-			% <<-This kind of comment must be removed before adding missing parts->>
-			
-			\section{Le nostre competenze}
-				\subsection{Chi siamo}
-				"Pomodoro-Musei di Pesaro" è una iniziativa nata dalla nostra amicizia e dal desiderio di contribuire a migliorare in maniera innovativa alcune problematiche/aspetti riscontrati all'interno dell'ambito museale di Pesaro.\\
-				Noi crediamo che l'unione tra il mondo artistico e il mondo tecnico informatico, possa essere una combinazione vincente non solo per risolvere efficacemente le nuove problematiche legate all'ambiente museale, ma anche, per valorizzare quest'ultimo in un periodo dove il tema dell'informatizzazione sta diventando sempre più importante.\\
-				Il team di lavoro è composto da Alice, curatrice della parte artistica e informativa, e da Francesco curatore della parte informatica e di gestione delle risorse. I nostri "nickname" su internet sono rispettivamente: r0s4dip3sar0 e R0mb0. 
-				
-				\subsection{I nostri studi}
-				La nostra formazione parte da ambienti e origini differenti;
-				Alice ha studiato presso il Liceo Artistico di Pesaro e ha poi proseguito gli studi con il Corso di Perfezionamento di Disegno Animato e Fumetto a Urbino, ha poi svolto vari impieghi ma è sempre stata interessata al panorama artistico-culturale e ha recentemente per questo suo interesse, svolto il Servizio Civile per la durata di 1 anno presso Centro Arti Visive Pescheria, approfondendo ulteriormente le sue conoscenze in questo ambiente di lavoro e ha ideato questo progetto in seguito all'esperienza del Servizio Civile per potenziare e migliorare certi aspetti riguardanti i musei di Pesaro che ha notato durante le sue mansioni, anche in vista dell'arrivo di Pesaro Capitale della Cultura 2024.\\
-				Francesco diplomato al Liceo Scientifico ha proseguito gli studi scegliendo il corso triennale di "informatica applicata" presso l'Università degli Studi di Urbino con l'intenzione di proseguire la formazione immatricolandosi alla magistrale dello stesso corso.  
-				
-				\subsection{Le nostre Capacità}
-				Le abilità del nostro team risiedono dietro le conoscenze artistiche di Alice
-				che tramite le sue conoscenze artistico-culturali ha sviluppato itinerario e contenuto dei testi riguardanti i Musei e realizzato i disegni per curarne la parte grafica (spinta dalla sua passione per il disegno, la pittura, la fotografia e il patrimonio artistico di Pesaro)
-				e dietro le conoscenze tecniche di Francesco, che pur avendo intrapreso un percorso di studi tecnico non ha mai abbandonato le sue passioni, come quella della musica, della fotografia, della modellazione/stampa in 3d. Le sue principali abilità all'interno del progetto risiedono nella pianificazione e gestione automatizzata del lavoro, nonché sulle conoscenze base delle strategie di lavoro aziendale e di costruzione di un "workteam". Dal punto di vista tecnico/informatico, le competenze risiedono nella padronanza di strumenti di lavoro come "GitHub", in una buona conoscenza dei più comuni linguaggi di programmazione, tra cui il linguaggio \LaTeX utilizzato per la scrittura della documentazione del progetto e in una discreta conoscenza di programmi per la manipolazione di video, foto e audio.
-				
-			\section{Presentazione del progetto}
-				\subsection{Obiettivo del progetto}
-				L'obiettivo del progetto è quello di fornire sia agli operatori dei musei che ai turisti delle guide rigorose per la spiegazione delle opere contenute nei musei, oltre che fornire una serie di strumenti/documenti avanzati per poter presentare le opere in maniera attraente ed innovativa.
-				
-				\subsection{Il lavoro svolto}
-				 Come scelta preliminare si è deciso di sviluppare un progetto "open-source", non solo per rispettare la legge europea ma anche perché crediamo nella cooperazione tra le persone ed in particolare nella cooperazione della "community" nei riguardi del progetto. Lo sviluppo del progetto rispetta i termini dell'etica definita dalla "open source foundation" pertanto sia la licenza di pubblicazione (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License) che gli strumenti di lavoro utilizzati ("GitHub" per la gestione del lavoro asincrono e il linguaggio \LaTeX), rispettano questa condizione.\\
-				 La piattaforma di sviluppo asincrono "GitHub" (basata su "Git") non solo permette di tenere traccia (senza possibilità di modifica) di tutti i cambiamenti effettuati nel corso dello sviluppo, ma offre anche uno spazio web nel quale pubblicare il progetto e mette a disposizione uno spazio per accogliere eventuali suggerimenti/modifiche da parte di utenti interessati al progetto.\\
-				 Il linguaggio \LaTeX è un linguaggio avanzato per la creazione di documenti formali; essendo un linguaggio di programmazione non solo mette a disposizione il pieno controllo di tutti gli aspetti che riguardano il documento, ma permette anche di integrare funzioni aggiuntive (per esempio delle librerie grafiche per la gestione avanzata delle immagini) per la creazione di contenuti collaterali alla scrittura, che aumentano la capacità espressiva e che permettono di automatizzare molte delle operazioni che normalmente con un programma tipo "word" sarebbe necessario fare a mano.\\
-				 \bigskip
-				 Inizialmente per organizzare al meglio i vari documenti, è stata aperta su "GitHub" un'organizzazione con il nome del progetto (raggiungibile tramite questo link: ). Successivamente sono state aperte delle "repository" per contenere in maniera ordinata tutti i file che riguardano i documenti prodotti. Le tre "repository" principali sono: "Guida-per-Tour-Bambini-Musei-Civici", "Guida-per-Tour-Audulti-Musei-Civici" e "Tour-ai-Musei-Oliveriani".\\
-				 All'interno di ogni "repository" è possibile vedere: l'intero sviluppo cronologico del lavoro fatto per la creazione del documento,  i file di licenza (normalmente appare la: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"), i file per la "conduzione etica del progetto" (come la descrizione dell'ambiente di lavoro e come proporre suggerimenti/modifiche), i materiali utilizzati per lo sviluppo del documento (di ogni materiale usato che non è stato auto-prodotto, ne sono stati riportati i link di provenienza e la licenza/copyright con la quale sono stati reperiti) e ovviamente i file sorgenti in formato \LaTeX. Inoltre nelle sezione "Release" è possibile scaricare i documenti già compilati e pronti per essere visionati dal pubblico.\\
-				 Durante lo sviluppo del progetto è stata prodotta tutta una serie di documentazione ufficiale nella quale è stato documentato tutto il macro sviluppo del progetto. In questi documenti è possibile trovare la trascrizione di tutte le riunioni fatte per lo sviluppo, oltre che la descrizione di tutte le scelte progettuali e per ogni fase di lavoro la descrizione dei "task" principali e secondari. Mentre per quanto riguarda lo sviluppo atomico e i record temporali basta scaricare i "log" direttamente dalla "repository" d'interesse.
-				 
+		
+		\section{Le nostre competenze}
+		\subsection{Chi siamo}
+		"Pomodoro-Musei di Pesaro" è una iniziativa nata dalla nostra amicizia e dal desiderio di contribuire a migliorare in maniera innovativa alcune problematiche/aspetti riscontrati all'interno dell'ambito museale di Pesaro.\\
+		Noi crediamo che l'unione tra il mondo artistico e il mondo tecnico informatico, possa essere una combinazione vincente non solo per risolvere efficacemente le nuove problematiche legate all'ambiente museale, ma anche per valorizzare quest'ultimo in un periodo dove il tema dell'informatizzazione sta diventando sempre più importante.\\
+		Il team di lavoro è composto da Alice, curatrice della parte artistica e informativa e da Francesco curatore della parte informatica e di gestione delle risorse. I nostri "nickname" su internet sono rispettivamente: r0s4dip3sar0 e R0mb0. 
+		
+		\subsection{I nostri studi}
+		La nostra formazione parte da ambienti e origini differenti;
+		Alice ha studiato presso il Liceo Artistico di Pesaro e ha poi proseguito gli studi con il Corso di Perfezionamento di Disegno Animato e Fumetto alla Scuola del Libro ad Urbino, ha poi svolto vari impieghi ma è sempre stata interessata al panorama artistico-culturale e ha svolto recentemente, per questo suo interesse, il Servizio Civile per la durata di 1 anno presso il Centro Arti Visive Pescheria, approfondendo ulteriormente le sue conoscenze in questo ambiente di lavoro e ha ideato questo progetto per potenziare e migliorare certi aspetti riguardanti i musei, in previsione dell'evento di Pesaro Capitale della Cultura 2024.\\
+		Francesco diplomato al Liceo Scientifico di Pesaro ha proseguito gli studi scegliendo il corso triennale di "informatica applicata" presso l'Università degli Studi di Urbino con l'intenzione di proseguire la formazione immatricolandosi alla magistrale dello stesso corso.  
+		
+		\subsection{Le nostre Capacità}
+		Le abilità del nostro team risiedono dietro le conoscenze artistiche di Alice e di quelle tecniche di Francesco. Alice,
+		tramite le sue conoscenze artistico-culturali, ha sviluppato l'itinerario e il contenuto dei testi riguardanti i Musei e ha realizzato i disegni per curare la parte grafica (spinta dalla sua passione per il disegno, la pittura, la fotografia e il patrimonio artistico di Pesaro).
+		Francesco, pur avendo intrapreso un percorso di studi tecnico, non ha mai abbandonato le sue passioni come quella della musica, della fotografia, della modellazione/stampa in 3d. Le sue principali abilità all'interno del progetto risiedono nella pianificazione e gestione automatizzata del lavoro, nonché sulle conoscenze base sulle strategie di lavoro aziendale e di costruzione di un "workteam". Dal punto di vista tecnico/informatico, le competenze risiedono nella padronanza di strumenti di lavoro come "GitHub", in una buona conoscenza dei più comuni linguaggi di programmazione, tra cui il linguaggio \LaTeX utilizzato per la scrittura della documentazione del progetto e in una discreta conoscenza di programmi per la manipolazione di video, foto e audio.
+		
+		\section{Presentazione del progetto}
+		\subsection{Obiettivo del progetto}
+		L'obiettivo del progetto è quello di fornire sia agli operatori dei musei che ai turisti delle guide rigorose per la spiegazione delle opere contenute nei musei, oltre che fornire una serie di strumenti/documenti avanzati per poter presentare le opere in maniera attraente ed innovativa.
+		
+		\subsection{Il lavoro svolto}
+		Come scelta preliminare si è deciso di sviluppare un progetto "open-source", non solo per rispettare la legge europea ma anche perché crediamo nella cooperazione tra le persone ed in particolare nella cooperazione della "community" nei riguardi del progetto. Lo sviluppo del progetto rispetta i termini dell'etica definita dalla "open source foundation" pertanto sia la licenza di pubblicazione (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License) che gli strumenti di lavoro utilizzati ("GitHub" per la gestione del lavoro asincrono e il linguaggio \LaTeX), rispettano questa condizione.\\
+		La piattaforma di sviluppo asincrono "GitHub" (basata su "Git") non solo permette di tenere traccia (senza possibilità di modifica) di tutti i cambiamenti effettuati nel corso dello sviluppo, ma offre anche uno spazio web nel quale pubblicare il progetto e mette a disposizione uno spazio per accogliere eventuali suggerimenti/modifiche da parte di utenti interessati al progetto.\\
+		Il linguaggio \LaTeX è un linguaggio avanzato per la creazione di documenti formali; essendo un linguaggio di programmazione non solo mette a disposizione il pieno controllo di tutti gli aspetti che riguardano il documento, ma permette anche di integrare funzioni aggiuntive (per esempio delle librerie grafiche per la gestione avanzata delle immagini) per la creazione di contenuti collaterali alla scrittura, che aumentano la capacità espressiva e che permettono di automatizzare molte delle operazioni che normalmente con un programma tipo "word" sarebbe necessario fare a mano.\\
+		\bigskip
+		Inizialmente per organizzare al meglio i vari documenti, è stata aperta su "GitHub" un'organizzazione con il nome del progetto (raggiungibile tramite \href{https://github.com/Pomodoro-Musei-di-Pesaro}{\textcolor{blue}{questo link}}). Successivamente sono state aperte delle "repository" per contenere in maniera ordinata tutti i file che riguardano i documenti prodotti. Le tre "repository" principali sono: "Guida-per-Tour-Bambini-Musei-Civici", "Guida-per-Tour-Audulti-Musei-Civici" e "Tour-ai-Musei-Oliveriani".\\
+		All'interno di ogni "repository" è possibile vedere: l'intero sviluppo cronologico del lavoro fatto per la creazione del documento,  i file di licenza (normalmente appare la: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"), i file per la "conduzione etica del progetto" (come la descrizione dell'ambiente di lavoro e come proporre suggerimenti/modifiche), i materiali utilizzati per lo sviluppo del documento (di ogni materiale usato che non è stato auto-prodotto, ne sono stati riportati i link di provenienza e la licenza/copyright con la quale sono stati reperiti) e ovviamente i file sorgenti in formato \LaTeX. Inoltre nelle sezione "Release" è possibile scaricare i documenti già compilati e pronti per essere visionati dal pubblico.\\
+		Durante lo sviluppo del progetto è stata prodotta tutta una serie di documentazione ufficiale nella quale è stato documentato tutto il macro sviluppo del progetto. In questi documenti è possibile trovare la trascrizione di tutte le riunioni fatte per lo sviluppo, oltre che la descrizione di tutte le scelte progettuali e per ogni fase di lavoro la descrizione dei "task" principali e secondari. Mentre per quanto riguarda lo sviluppo atomico e i record temporali basta scaricare i "log" direttamente dalla "repository" d'interesse.
+		
+		\newpage
+		\subsection{Presentazione del progetto}
+		È possibile accedere all'organizzazione dove sono contenute la varie parti del progetto scansionando questo "QR-Code"\\
+		\begin{minipage}{\linewidth}
+			\centering
+			\zoombox{\includegraphics[scale=0.6]{Pomodoro-Musei-di-Pesaro-QR.png}}
+			\captionof{figure}{"QR-Code" per accedere al progetto.}
+		\end{minipage}\\
+		\bigskip
+		
+		Oppure da \href{https://github.com/Pomodoro-Musei-di-Pesaro}{\textcolor{blue}{questo link}}.\\ 
+		\bigskip
 
-				 \subsection{Presentazione del progetto}
-				 È possibile accedere all'organizzazione dove sono contenute la varie parti del progetto da questo link:\\
-				 All'interno della organizzazione è possibile accedere alle "repository" che compongono il progetto; tre sono le "repository" principali: "Guida-per-Tour-Bambini-Musei-Civici", "Guida-per-Tour-Audulti-Musei-Civici" e "Tour-ai-Musei-Oliveriani".\\
-				 \bigskip
-				 Nella prima "repository" si possono trovare i seguenti documenti (scaricabili in formato compilato nella sezione "Release" posta a destra una volta essere entrati).\\
-				  All'interno della cartella "guide" è possibile trovare la guida principale,che propone un tour innovativo che comprende le opere che più coinvolgono la curiosità dei bambini e le spiegano in maniera semplice e divertente, ed è disponibile sia in formato normale che in formato ingrandito (per persone ipovedenti).\\
-				  All'interno della cartella "Guide_slides" si trova la guida principale in formato di "slides" pre-programmate per poter essere visualizzate ed interagite con le lavagne multimediali, utile nel caso in cui si debba fare una lezione rapida riguardo le principali opere dei Musei Civici. All'interno della cartella "Children_Creative_Labs" è possibile visualizzare la proposta di tre documenti per organizzare dei laboratori creativi con i bambini, in particolare il documento "Coloring_Artworks" presenta delle opere dei Musei Civici decolorate (tramite un algoritmo), per far in modo che possano essere interpretate e ricolorate dai bambini, mentre il documento "Find_The_Artworks" propone una sorta di "Caccia al Tesoro" in cui si vanno a cercare le opere del museo.\\
-				  Nel documento sono riportate delle carte da ritagliare (le linee di ritaglio non sono state riportate per una questione di spazio, siccome si sarebbe sfruttato in maniera peggiore la superficie del foglio), e su ciascuna carta è presente una parte relativa a un dettaglio di un' opera e un riquadro dove poter riportare la descrizione dell'opera una volta che si sarà ritrovata quest'ultima all'interno del museo.
-				  L'ultimo laboratorio creativo proposto è: "Link_Description_To_Images" il quale propone sempre delle carte da ritagliare, ma ci sono due categorie di carte, le prime presentano solo le immagini, mentre nelle seconde vi è la descrizione delle opere; una modalità di gioco prevede di distribuire le carte contenenti le immagini delle opere su di un tavolo, e di mischiare il secondo mazzo, si pesca una carta da quest'ultimo e si cerca di trovare l'immagine descritta tra le carte presenti sul tavolo.\\
-				  \bigskip
-				  La seconda "repository" ("Guida-per-Tour-Audulti-Musei-Civici"), presenta nella cartella "guide" una spiegazione più approfondita, complessa e che comprende più opere del museo per dare ai visitatori una visione più ampia del museo attraverso un tour per loro ideato e degli spettacoli che possono visionare all'interno della Sonosfera.\\
-				  È stata realizzata sia in formato normale che in formato ingrandito (per persone ipovedenti) cosa che aiuta ulteriormente durante la visita se si hanno delle difficoltà a leggere le didascalie dei reperti e nella cartella "guide_with_Images" presenta un'ulteriore versione della guida arricchita con le immagini delle opere.\\
-				  L'ultima "repository" ("Tour-ai-Musei-Oliveriani") presenta all'interno della cartella "Guide" la guida per i visitatori che spiega la storia ed i reperti principali sia del Museo Oliveriano, che della Biblioteca Oliveriana ed anch'essa è presente sia in formato normale che in formato ingrandito.
-				 
-		\section{Possibilità d'arricchimento delle risorse del progetto}
+		All'interno dell'organizzazione è possibile accedere alle "repository" che compongono il progetto; tre sono le "repository" principali: "Guida-per-Tour-Bambini-Musei-Civici", "Guida-per-Tour-Audulti-Musei-Civici" e "Tour-ai-Musei-Oliveriani".\\
+		\bigskip
+		Nella prima "repository" si possono trovare i seguenti documenti (scaricabili in formato compilato nella sezione "Release" posta a destra una volta essere entrati).\\
+		All'interno della cartella "guide" è possibile trovare la guida principale che propone un tour innovativo che comprende le opere che più coinvolgono la curiosità dei bambini e le spiegano in maniera semplice e divertente, ed è disponibile sia in formato normale che in formato ingrandito (per persone ipovedenti).\\
+		All'interno della cartella "Guide\_slides" si trova la guida principale in formato di "slides" pre-programmate per poter essere visualizzate ed interagite con le lavagne multimediali, utile nel caso in cui si debba fare una lezione rapida riguardo le principali opere dei Musei Civici.\\ All'interno della cartella "Children\_Creative\_Labs" è possibile visualizzare la proposta di tre documenti per organizzare dei laboratori creativi con i bambini, in particolare il documento "Coloring\_Artworks" presenta delle opere dei Musei Civici decolorate (tramite un algoritmo), per far in modo che possano essere interpretate e ricolorate dai bambini, mentre il documento "Find\_The\_Artworks" propone una sorta di "Caccia al Tesoro" in cui si vanno a cercare le opere del museo.\\
+		Nel documento sono riportate delle carte da ritagliare e su ciascuna carta è presente una parte relativa a un dettaglio di un'opera e un riquadro dove poter riportare la descrizione dell'opera una volta che si sarà ritrovata quest'ultima all'interno del museo.\\
+		L'ultimo laboratorio creativo proposto è: "Link\_Description\_To\_Images" il quale propone sempre delle carte da ritagliare, ma ci sono due categorie di carte, la prima presenta solo delle immagini, mentre nella seconda vi è la descrizione delle opere; una modalità di gioco prevede di distribuire le carte contenenti le immagini delle opere su di un tavolo, si mischia il secondo mazzo, si pesca una carta da quest'ultimo con lo scopo di trovare l'immagine descritta tra le carte presenti sul tavolo.\\
+		All'interno della cartella "Children\_Labs" è presente un breve test per verificare la comprensione delle opere dei Musei Civici da parte dei bambini e per comprendere quali opere preferiscono.\\
+		\bigskip
+		La seconda "repository" ("Guida-per-Tour-Audulti-Musei-Civici"), presenta nella cartella "guide" una spiegazione più approfondita e complessa che comprende più opere per dare ai visitatori una visione più ampia del museo attraverso un tour per loro ideato e presenta degli spettacoli che gli spettatori possono visionare all'interno della Sonosfera.\\
+		La guida è stata realizzata sia in formato normale che in formato ingrandito (per persone ipovedenti) e nella cartella "guide\_with\_Images" si trova un'ulteriore versione della guida arricchita con le immagini delle opere.\\
+		L'ultima "repository" ("Tour-ai-Musei-Oliveriani") presenta all'interno della cartella "Guide" la guida per i visitatori che spiega la storia ed i reperti principali sia del Museo Oliveriano, che della Biblioteca Oliveriana ed anch'essa è presente sia in formato normale che in formato ingrandito.
+		
+		\section{Ulteriori lavori in sviluppo}
 		
 		\begin{itemize}
 			\item Creazione di un "podcast" per la presentazione delle opere nei Musei Oliveriani
+			\item Creazione di un "podcast" per la presentazione delle opere nei Musei Civici
 			\item Creazione di un album di figurine riguardo le opere dei Musi Civici (indirizzato ai bambini).
 			\item Creazione di un quaderno per prendere appunti all'interno del museo (rivolto ai bambini).
-			\item Creazione di un breve test per verificare la comprensione delle opere dei Musei Civici da parte dei bambini.  
 		\end{itemize}
-	
+		
 		\vspace*{\fill}
 		% Print license shield
 		\doclicenseThis
-				
+		
 	\end{flushleft}
 \end{document}

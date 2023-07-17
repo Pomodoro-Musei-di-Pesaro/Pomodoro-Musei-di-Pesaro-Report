@@ -1,7 +1,7 @@
 # Relazione del progetto "Pomodoro Musei di pesaro"
 
 ---
-# State
+# Status
 [![Test Compilazione](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/actions/workflows/LaTeX_Action.yml/badge.svg?branch=main&event=push)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/actions/workflows/LaTeX_Action.yml)
 
 ---

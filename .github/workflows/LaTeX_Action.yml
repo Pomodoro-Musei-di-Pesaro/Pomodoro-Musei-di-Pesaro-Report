@@ -13,9 +13,10 @@ jobs:
         with: # insert here files to compile
           root_file: "Report/*.tex"
           glob_root_file: true
-      - name: Carica file compilati
+      - run: ls
+      - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
-          name: my-artifact
+          name: PDF
           path: Report.pdf
       

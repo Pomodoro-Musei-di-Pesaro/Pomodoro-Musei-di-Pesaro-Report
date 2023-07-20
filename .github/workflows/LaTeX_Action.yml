@@ -8,12 +8,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           sparse-checkout: .
+      - run: ls
       - name: Compilazione dei file della Relazione
         uses: xu-cheng/latex-action@v2
         with: # insert here files to compile
           root_file: "Report/*.tex"
           glob_root_file: true
-      - run: ls
+      
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:

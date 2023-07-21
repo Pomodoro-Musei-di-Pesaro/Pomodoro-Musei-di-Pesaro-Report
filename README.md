@@ -6,8 +6,8 @@
 
 ---
 
-# Scarica il documento all'ultima versione (non stabile)
-[Documento](https://nightly.link/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/workflows/LaTeX_Action/main/Relazione.zip)
+# In caso di nessuna Release
+  - Scarica il [documento](https://nightly.link/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/workflows/LaTeX_Action/main/Relazione.zip) dimostrativo.
 
 ---
 

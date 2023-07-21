@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with: # insert here files to compile
           working_directory: Report
-          root_file: Report/Pomodoro_Musei_di_Pesaro_Report.tex
+          root_file: Pomodoro_Musei_di_Pesaro_Report.tex
       - name: Caricamento della Release temporanea
         uses: actions/upload-artifact@v3
         with: 

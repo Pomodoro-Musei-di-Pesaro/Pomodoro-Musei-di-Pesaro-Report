@@ -6,6 +6,11 @@
 
 ---
 
+# Scarica il documento all'ultima versione (non stabile)
+[Documento](https://nightly.link/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/workflows/LaTeX_Action/main/Relazione.zip)
+
+---
+
 # License
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 

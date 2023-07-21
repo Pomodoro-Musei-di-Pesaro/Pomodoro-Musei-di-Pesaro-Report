@@ -4,15 +4,19 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: Download file della Repo
         uses: actions/checkout@v3
-      - run: ls Images
       - name: Compilazione dei file della Relazione
         uses: xu-cheng/latex-action@v2
         with: # insert here files to compile
           working_directory: Report
           root_file: "*.tex"
           glob_root_file: true
+      - name: Caricamento della Release temporanea
+        uses: actions/upload-artifact@v3
+        with: 
+          name: Relazione
+          path: Report/Report.pdf
       
      
       

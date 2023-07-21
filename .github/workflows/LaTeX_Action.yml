@@ -12,8 +12,12 @@ jobs:
           working_directory: Report
           root_file: "*.tex"
           glob_root_file: true
-      - run: ls
-      - run: ls Report
+      - name: Caricamento della Release temporanea
+        uses: actions/upload-artifact@v3
+        with: 
+          name: Relazione
+          path: Report/Pomodoro_Musei_di_Pesaro_Report.pdf
+
       
      
       

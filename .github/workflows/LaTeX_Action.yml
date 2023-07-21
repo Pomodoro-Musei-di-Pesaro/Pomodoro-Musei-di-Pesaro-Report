@@ -10,7 +10,8 @@ jobs:
       - name: Compilazione dei file della Relazione
         uses: xu-cheng/latex-action@v2
         with: # insert here files to compile
-          root_file: "Report/*.tex"
+          working_directory: Report
+          root_file: "*.tex"
           glob_root_file: true
       
      

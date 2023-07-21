@@ -7,6 +7,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v3
       - run: ls Images
+      - name: Compilazione dei file della Relazione
+        uses: xu-cheng/latex-action@v2
+        with: # insert here files to compile
+          root_file: "Report/*.tex"
+          glob_root_file: true
       
      
       

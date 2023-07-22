@@ -12,7 +12,7 @@ jobs:
           working_directory: Report
           root_file: Pomodoro_Musei_di_Pesaro_Report.tex
       - name: Ridenominazione files
-      - run: mv Report/Pomodoro_Musei_di_Pesaro_Report.pdf Report/Relazione_Pomodoro_Musei_di_Pesaro.pdf
+        run: mv Report/Pomodoro_Musei_di_Pesaro_Report.pdf Report/Relazione_Pomodoro_Musei_di_Pesaro.pdf
       - name: Caricamento della Release temporanea
         uses: actions/upload-artifact@v3
         with: 

@@ -9,8 +9,8 @@
 ---
 
 # Analytics
-[![views](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/traffic/traffic-Pomodoro-Musei-di-Pesaro-Report/views.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/tree/traffic#-Pomodoro-Musei-di-Pesaro-Report)
-[![clones](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/traffic/traffic-Pomodoro-Musei-di-Pesaro-Report/clones.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/tree/traffic#-Pomodoro-Musei-di-Pesaro-Report)
+[![views](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/traffic/traffic-Pomodoro-Musei-di-Pesaro-Report/views.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)
+[![clones](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/traffic/traffic-Pomodoro-Musei-di-Pesaro-Report/clones.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)
 [![Github all releases](https://img.shields.io/github/downloads/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/total.svg)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/releases/)
 
 ---

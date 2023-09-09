@@ -1,5 +1,7 @@
 # Relazione del progetto "Pomodoro Musei di pesaro"
+
 ⚠️ Per via dell'abbandono del progetto da parte di Alice, la relazione non è più da considerarsi valida. ⚠️
+
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ---

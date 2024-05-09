@@ -6,20 +6,23 @@
 
 ---
 
-# Status
+## Status
+
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/19e0c4ff989c46df84ae41f74918b4cf)](https://app.codacy.com/gh/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Test Compilazione](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/actions/workflows/LaTeX_Action.yml/badge.svg?branch=main&event=push)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/actions/workflows/LaTeX_Action.yml)
 
 ---
 
-# Analytics
+## Analytics
+
 [![views](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/traffic/traffic-Pomodoro-Musei-di-Pesaro-Report/views.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)
 [![clones](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/traffic/traffic-Pomodoro-Musei-di-Pesaro-Report/clones.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)
 [![Github all releases](https://img.shields.io/github/downloads/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/total.svg)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/releases/)
 
 ---
 
-# Details
+## Details
+
 [![GitHub commits](https://badgen.net/github/commits/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/commit/)
 [![GitHub stars](https://badgen.net/github/stars/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/stargazers/)
 [![GitHub watchers](https://img.shields.io/github/watchers/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report?color=blue)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/watchers)
@@ -30,12 +33,14 @@
 
 ---
 
-# In caso di nessuna Release
+## In caso di nessuna Release
+
 [![Download](https://custom-icon-badges.demolab.com/badge/-Scarica%20i%20documenti%20dimostrativi-blue?style=for-the-badge&logo=download&logoColor=white "Documenti")](https://nightly.link/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/workflows/LaTeX_Action/main/Relazione.zip)
 
 ---
 
-# License
+## License
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
@@ -49,7 +54,8 @@ This work is licensed under a
 
 ---
 
-# Contributors
+## Contributors
+
 <!-- readme: collaborators,contributors -start -->
 <table>
 	<tbody>

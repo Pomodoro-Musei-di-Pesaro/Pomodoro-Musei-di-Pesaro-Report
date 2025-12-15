@@ -17,7 +17,7 @@ jobs:
       - name: Ridenominazione files
         run: mv Report/Pomodoro_Musei_di_Pesaro_Report.pdf Report/Relazione_Pomodoro_Musei_di_Pesaro.pdf
       - name: Caricamento della Release temporanea
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with: 
           name: Relazione
           path: Report/Relazione_Pomodoro_Musei_di_Pesaro.pdf

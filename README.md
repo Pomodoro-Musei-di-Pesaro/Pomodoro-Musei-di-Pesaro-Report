@@ -1,7 +1,5 @@
 # Relazione del progetto "Pomodoro Musei di pesaro"
 
-⚠️ Per via dell'abbandono del progetto da parte di Alice, la relazione non è più da considerarsi valida. ⚠️
-
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report)
 [![Donate](https://img.shields.io/badge/PayPal-Donate%20to%20Author-blue.svg)](http://paypal.me/R0mb0)
@@ -43,14 +41,14 @@
 
 </summary>
 
-![1.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/1.png)
-![2.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/2.png)
-![3.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/3.png)
-![4.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/4.png)
-![5.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/5.png)
-![6.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/6.png)
-![7.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/7.png)
-![8.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/8.png)
+![0001.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0001.png)
+![0002.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0002.png)
+![0003.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0003.png)
+![0004.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0004.png)
+![0005.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0005.png)
+![0006.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0006.png)
+![0007.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0007.png)
+![0008.png](https://github.com/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/ReadmeImgs/0008.png)
 
 </details>
 

@@ -1,13 +1,13 @@
 [
   {
-    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/pulls",
-    "title": "/pulls",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/orgs/Pomodoro-Musei-di-Pesaro/discussions/categories/show-and-tell",
     "title": "w-and-tell",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/pulls",
+    "title": "/pulls",
     "count": 1,
     "uniques": 1
   }

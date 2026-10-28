@@ -12,22 +12,10 @@
     "uniques": 2
   },
   {
-    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/issues",
-    "title": "/issues",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/orgs/Pomodoro-Musei-di-Pesaro/discussions",
     "title": "Overview",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/main/Report/Pomodoro_Musei_di_Pesaro_Report.tex",
-    "title": "/blob/main/Report/Pomodoro_Musei_di_Pesaro_Report.tex",
-    "count": 2,
-    "uniques": 1
   },
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/commits/main/CITATION.cff",
@@ -48,8 +36,8 @@
     "uniques": 1
   },
   {
-    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/tree/main/Report",
-    "title": "/tree/main/Report",
+    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/issues",
+    "title": "/issues",
     "count": 1,
     "uniques": 1
   }

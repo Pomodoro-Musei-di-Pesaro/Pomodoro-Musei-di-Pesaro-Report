@@ -6,14 +6,14 @@
     "uniques": 2
   },
   {
-    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/pulls",
-    "title": "/pulls",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report",
     "title": "Overview",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/blob/b2bd1ebfa6064eb1df5e2c86a4a44aedbb74bda3/CODE_OF_CONDUCT.md",
+    "title": "/blob/b2bd1ebfa6064eb1df5e2c86a4a44aedbb74bda3/CODE_OF_CONDUCT.md",
     "count": 1,
     "uniques": 1
   },
@@ -30,12 +30,6 @@
     "uniques": 1
   },
   {
-    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/commits/main/CODE_OF_CONDUCT.md",
-    "title": "/commits/main/CODE_OF_CONDUCT.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/graphs/commit-activity",
     "title": "/graphs/commit-activity",
     "count": 1,
@@ -44,6 +38,12 @@
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/pull/39/files",
     "title": "/pull/39/files",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/Pomodoro-Musei-di-Pesaro/Pomodoro-Musei-di-Pesaro-Report/pulls",
+    "title": "/pulls",
     "count": 1,
     "uniques": 1
   }
